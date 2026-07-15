@@ -104,6 +104,10 @@ The frontend expects the backend at `http://localhost:8050` (see `lib/api.ts` /
 
 ## Aura Analyst setup (one-time, in the Portal — the app can't do this)
 
+> **Status:** wired & verified — the `meridian_intel` domain is crawled and the
+> endpoint + key are in `.env`, so `/health` reports `analyst_configured: true`.
+> The steps below are how it was done (and how to re-point it to a new domain).
+
 `analyst_configured` is `false` until you wire a crawled domain:
 
 1. SingleStore Portal → **Analyst** → create/select a domain pointed at the
